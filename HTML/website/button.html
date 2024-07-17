@@ -1,0 +1,72 @@
+<style>
+    .subcribe_button {
+        background-color: rgb(200, 4, 4);
+        color: white;
+        border: none;
+        height: 36px;    
+        width: 100px;
+        border-radius: 5px;
+        /* bo viền xung quanh cho tròn */
+        cursor: pointer;  
+        /* trỏ chuột thay đổi */
+        margin-right: 5px;
+        /* khoảng cách 2 ô */
+        transition: opacity 1s;
+        /* độ mở chuyển đổi mượt mà hơn */
+        }
+    .subcribe_button:hover {
+        opacity: 0.8;
+        /* làm mờ 
+        0 -> 1 
+        0: mờ nhất
+        1: rõ nhất
+        */
+    }
+    .subcribe_button:active {
+        opacity: 0.6;
+    }
+    .join_button {
+        background-color: white;
+        color: blue;
+        border-color: blue;
+        border-style: solid;
+        height: 36px;    
+        width: 60px;
+        border-radius: 5px;
+        cursor: pointer;  
+        margin-right: 5px;
+        transition: background-color 1s;
+        /* màu nền chuyển đổi chậm + mượt mà hơn */
+        }
+    .join_button:hover {
+        background-color: blue;
+        color: white;
+    }
+    .join_button:active {
+        opacity: 0.6;
+    }
+    .tweet_button {
+        background-color: rgb(10, 145, 241);
+        color: white;
+        border: none;
+        border-style: solid;
+        height: 45px;    
+        width: 100px;
+        border-radius: 30px;
+        cursor: pointer;
+        font-weight: bold;
+
+    }
+</style>
+
+<button class="subcribe_button">
+    SUBCRIBE
+</button>
+
+<button class="join_button">
+    JOIN
+</button>
+
+<button class="tweet_button">
+    Tweet
+</button>
