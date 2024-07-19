@@ -1,0 +1,22 @@
+input:checked ~ img {
+  /*1. biến mất khỏi giao diện */
+  /* display: none; */
+  /*2. biến mất khỏi giao diện, nhưng chiếm vị trí */
+  /* visibility: hidden; */
+  /*3. làm mờ */
+  opacity: 0;
+}
+
+img {
+  /* làm mờ từ từ trong 2 giây chứ ko mất liền */
+  transition: 2s;
+}
+
+h1 {
+  opacity: 0.5;
+  background-color: red;
+}
+
+h2 {
+  visibility: hidden;
+}

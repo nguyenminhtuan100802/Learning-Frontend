@@ -1,0 +1,10 @@
+/* đổi màu tất cả thẻ có thuộc tính title và phải có đúng chữ youtube */
+[title~="youtube"] {
+  color: pink;
+}
+
+/* đổi màu tất cả thẻ có thuộc tính title và chỉ cần có facebook */
+
+[title*="facebook"] {
+  color: red;
+}

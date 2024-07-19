@@ -1,0 +1,9 @@
+h1 {
+  color: red;
+  /* prefix hỗ trợ đa trình duyệt như chrome, firefox, edge ....*/
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  /* không cho người dùng quét bôi đen chữ */
+  user-select: none;
+}

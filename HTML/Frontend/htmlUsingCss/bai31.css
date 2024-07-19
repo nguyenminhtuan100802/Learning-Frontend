@@ -1,0 +1,11 @@
+/* đổi màu thẻ h2 đứng sát ngay sau thẻ h1 */
+h1 + h2 {
+  color: red;
+}
+h3.demo.demo2 + h3 {
+  color: blue;
+}
+/* đổi màu toàn bộ thẻ p sau thẻ h3 */
+h3 ~ p {
+  color: powderblue;
+}

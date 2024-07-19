@@ -1,0 +1,9 @@
+/* các thẻ a có href sẽ đổi màu */
+p[href] {
+  color: red;
+}
+
+/* thẻ nào có thuộc tính target="_blank" sẽ đổi màu */
+[target="_blank"] {
+  color: violet;
+}

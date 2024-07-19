@@ -1,0 +1,14 @@
+h1 {
+  /* màu */
+  color: violet;
+  /* in nghiêng */
+  font-style: italic;
+  /* kiểu chữ arial */
+  font-family: Arial, Helvetica, sans-serif;
+  /* chuyển hoa thường */
+  text-transform: capitalize;
+  /* căn giữa */
+  text-align: center;
+  /* cỡ chữ */
+  font-size: 18px;
+}
