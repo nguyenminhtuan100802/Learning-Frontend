@@ -1,0 +1,25 @@
+/* margin collapse chỉ bị ở chiều dọc, ko bị ở chiều ngang */
+/* .box {
+  width: 100px;
+  height: 100px;
+  border: 10px solid red;
+}
+
+.box_1 {
+  margin-bottom: 100px;
+}
+
+.box_2 {
+  margin-top: 200px;
+} */
+.item {
+      background-color: yellow;  
+      border: 2px solid;
+}
+
+.item_1{
+        margin-right: 10px;
+}
+.item_2{
+        margin-left: 30px;
+}

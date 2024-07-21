@@ -1,0 +1,22 @@
+/* chọn thẻ h3 là con của class container */
+.container h3 {
+  font-size: 40px;
+  color: red;
+}
+
+/* chọn thẻ p là con của class container */
+.container p {
+  font-size: 24px;
+  line-height: 1.4;
+}
+.container {
+  margin-left: auto;
+  margin-right: auto;
+  width: 500px;
+  background-color: violet;
+}
+
+/* chọn thẻ img là con của class container */
+.container img {
+  width: 300px;
+}

@@ -1,0 +1,38 @@
+div.box_1 {
+  width: 100px;
+  height: 100px;
+  color: red;
+  background-color: gray;
+  padding: 20px;
+  /* kích thước, nét liền, màu */
+  border: 20px solid purple;
+  /* border từng cạnh thì thêm top left, top right, bottom left, bottom right */
+  /* border-radius: 30px;
+  margin: 20px; */
+}
+div.box_2 {
+  width: 100px;
+  height: 100px;
+  color: red;
+  background-color: orange;
+  padding: 20px;
+  /* kích thước, nét liền, màu */
+  border: 20px solid black;
+  /* border từng cạnh thì thêm top left, top right, bottom left, bottom right */
+  /* border-radius: 30px;
+  margin: 20px; */
+  margin-left: 180px;
+}
+div.box_3 {
+  width: 100px;
+  height: 100px;
+  color: red;
+  background-color: powderblue;
+  padding: 20px;
+  /* kích thước, nét liền, màu */
+  border: 20px solid red;
+  /* border từng cạnh thì thêm top left, top right, bottom left, bottom right */
+  /* border-radius: 30px;
+  margin: 20px; */
+  margin-left: 360px;
+}
