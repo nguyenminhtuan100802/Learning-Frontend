@@ -1,0 +1,28 @@
+body {
+  background-color: greenyellow;
+}
+
+.card {
+  margin: 100px auto;
+  width: 200px;
+  height: 300px;
+  background-color: black;
+  border-radius: 20px;
+  padding: 10px;
+  color: white;
+  position: relative;
+}
+
+.card_heart,
+.card_cart {
+  position: absolute;
+  font-size: 20px;
+}
+
+.card_cart {
+  right: 10px;
+}
+
+.card_image{
+        background-color: black;
+}
