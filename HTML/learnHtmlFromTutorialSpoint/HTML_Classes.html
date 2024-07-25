@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <script>
+      function showContent() {
+        var element = document.getElementsByClassName("content")[2];
+        if (element.style.display === "none") {
+          element.style.display = "block";
+        } else {
+          element.style.display = "none";
+        }
+      }
+    </script>
+    <style>
+      .highlight {
+        background-color: yellow;
+        color: black;
+        padding: 5px;
+      }
+      .heading {
+        font-size: 24px;
+        color: #333;
+        text-align: center;
+      }
+
+      .content {
+        font-size: 16px;
+        color: #666;
+        line-height: 1.5;
+      }
+
+      .button {
+        background-color: #007bff;
+        color: #fff;
+        padding: 10px 20px;
+        border: none;
+        cursor: pointer;
+      }
+
+      .interactive-button {
+        background-color: #007bff;
+        color: #fff;
+        padding: 10px 20px;
+        border: none;
+        cursor: pointer;
+      }
+    </style>
+  </head>
+
+  <body>
+    <!-- Using class attribute in both Element-->
+    <h1 class="header">Tutorialspoint</h1>
+    <p class="highlight">Simply Easy Learning</p>
+
+    <!-- Defined two Classes in h1 Element -->
+    <h1 class="heading content">Welcome to Tutorialspoint</h1>
+    <p class="content">We make Tutorials - Simply Easy Learning</p>
+    <button class="button">Click Me</button>
+
+    <p class="highlight">
+      To create a class, you need to define it within your HTML document or link
+      to an external CSS file that contains class definitions. Classes are
+      defined using the "class" attribute.
+    </p>
+    <p class="highlight">
+      HTML classes are essential for styling and formatting web page elements
+      consistently. They allow you to apply the same styles to multiple elements
+      without repeating code, promoting maintainability and a cohesive design.
+    </p>
+
+    <p class="content" style="display: none">
+      This content can be toggled by clicking the button.
+    </p>
+    <button class="interactive-button" onclick="showContent()">Click Me</button>
+  </body>
+</html>

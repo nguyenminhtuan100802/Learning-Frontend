@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <script>
+      function showContent() {
+        var element = document.getElementById("content");
+        if (element.style.display === "none") {
+          element.style.display = "block";
+        } else {
+          element.style.display = "none";
+        }
+      }
+    </script>
+    <style>
+      .interactive-button {
+        background-color: #007bff;
+        color: #fff;
+        padding: 10px 20px;
+        border: none;
+        cursor: pointer;
+      }
+
+      #highlight {
+        background-color: yellow;
+        color: black;
+        padding: 5px;
+      }
+
+      #header {
+        background-color: blue;
+        color: white;
+        padding: 10px;
+      }
+      /* Class selector */
+      .button {
+        background-color: green;
+        color: white;
+        padding: 5px 10px;
+        margin: 5px;
+      }
+    </style>
+  </head>
+
+  <body>
+    <!-- Using id attribute in both Element -->
+    <h1 id="header">Tutorialspoint</h1>
+    <p id="highlight">Simply Easy Learning</p>
+
+    <button class="interactive-button" onclick="showContent()">Click Me</button>
+    <p id="content" style="display: none">
+      This content can be toggled by clicking the button.
+    </p>
+
+    <!-- Unique ID for the header -->
+    <div id="header">This is the header</div>
+    <!-- Shared class for buttons -->
+    <div class="button">Button 1</div>
+    <div class="button">Button 2</div>
+  </body>
+</html>

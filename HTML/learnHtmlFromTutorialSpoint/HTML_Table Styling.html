@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Normal HTML Table</title>
+    <style>
+      tr:hover {
+        background-color: red;
+      }
+      /* sọc ngựa vằng cho dễ đọc */
+      tr:nth-child(even) {
+        background-color: #ffebcd;
+      }
+      td:nth-child(even),
+      th:nth-child(even) {
+        background-color: #d6eeee;
+      }
+      #table1 {
+        border-collapse: separate;
+      }
+      #table2 {
+        border-collapse: collapse;
+      }
+
+      tr {
+        border-bottom: 5px solid #ddd;
+      }
+
+      td,
+      th {
+        text-align: center;
+        vertical-align: middle;
+        padding: 5px;
+      }
+    </style>
+  </head>
+
+  <body>
+    <table id="table1" border="1">
+      <tr>
+        <th>Name</th>
+        <th>Salary</th>
+      </tr>
+      <tr>
+        <td>Ramesh Raman</td>
+        <td>5000</td>
+      </tr>
+      <tr>
+        <td>Shabbir Hussein</td>
+        <td>7000</td>
+      </tr>
+    </table>
+    <br />
+
+    <!--  -->
+    <table id="table2" border="1">
+      <tr>
+        <th>Name</th>
+        <th>Salary</th>
+      </tr>
+      <tr>
+        <td>Ramesh Raman</td>
+        <td>5000</td>
+      </tr>
+      <tr>
+        <td>Shabbir Hussein</td>
+        <td>7000</td>
+      </tr>
+    </table>
+    <hr />
+
+    <!--  -->
+    <table border="1">
+      <tr>
+        <th>Name</th>
+        <th>Salary</th>
+        <th>Designation</th>
+        <th>Experience</th>
+      </tr>
+      <tr>
+        <td>Jhon Deo</td>
+        <td>5000</td>
+        <td>Marketing</td>
+        <td>1 year</td>
+      </tr>
+      <tr>
+        <td>Alan Walker</td>
+        <td>7000</td>
+        <td>Content</td>
+        <td>5 year</td>
+      </tr>
+      <tr>
+        <td>Tyler Swift</td>
+        <td>5000</td>
+        <td>Marketing</td>
+        <td>1 year</td>
+      </tr>
+    </table>
+  </body>
+</html>
