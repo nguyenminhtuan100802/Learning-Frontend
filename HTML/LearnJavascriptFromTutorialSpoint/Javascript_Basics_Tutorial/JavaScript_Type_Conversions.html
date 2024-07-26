@@ -1,0 +1,42 @@
+<html>
+  <head>
+    <title>Implicit conversion to string</title>
+  </head>
+  <body>
+    <script>
+      document.write("100" + 24 + "<br/>");
+      document.write("100" + false + "<br/>");
+      document.write("100" + null + "<br/>");
+      document.write("100" + undefined + "<br/>");
+
+      document.write("100" / 50 + "<br>");
+      document.write("100" - "50" + "<br>");
+      document.write("100" * true + "<br>");
+      document.write("100" - false + "<br>");
+      document.write("tp" / 50 + "<br>");
+
+      document.write(typeof String(100) + "<br/>");
+      document.write(typeof String(null) + "<br/>");
+      document.write(typeof String(true) + "<br/>");
+
+      document.write(Number("200") + "<br/>");
+      document.write(Number("1000e-2") + "<br/>");
+      document.write(Number(false) + "<br/>");
+      document.write(Number(null) + "<br/>");
+      document.write(Number(undefined) + "<br/>");
+      document.write(+"200" + "<br/>");
+
+      document.write(Boolean(100) + "<br/>");
+      document.write(Boolean(0) + "<br/>");
+      document.write(Boolean("") + "<br/>");
+      document.write(Boolean("Hi") + "<br/>");
+      document.write(Boolean(null) + "<br/>");
+
+      let date = new Date();
+      let numberDate = date.getTime();
+      document.write("The Numeric date is: " + numberDate + "<br/>");
+      let dateString = date.toString();
+      document.write("The string date is: " + dateString + "<br/>");
+    </script>
+  </body>
+</html>

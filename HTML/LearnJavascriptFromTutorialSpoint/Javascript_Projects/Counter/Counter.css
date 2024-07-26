@@ -1,0 +1,39 @@
+.card {
+  width: 300px;
+  height: 300px;
+  background-color: pink;
+  margin: 100px auto;
+  position: relative;
+}
+
+h1 {
+  font-family: Arial, Helvetica, sans-serif;
+  margin: 100px auto 0px auto;
+  text-align: center;
+  font-size: 50px;
+}
+
+.number_display {
+  font-size: 60px;
+  font-family: Arial, Helvetica, sans-serif;
+  text-align: center;
+  margin-top: 20px;
+  color: black;
+}
+
+.button_action .button_decrease{
+        margin-left: 10%;
+}
+
+.button_action button {
+  border-radius: 10px;
+  font-family: Arial, Helvetica, sans-serif;
+  cursor: pointer;
+  transition: 1s;
+}
+
+.button_action button:hover {
+  background-color: black;
+  color: white;
+  scale: 0.9;
+}

@@ -1,0 +1,58 @@
+<html>
+  <head>
+    <title>JavaScript string</title>
+  </head>
+  <body>
+    <script>
+      let str1 = "Hello World!"; // Using double quotes
+      let str2 = "Hello World!"; // Using single quotes
+      let str3 = `Hello World!`; // Using backticks
+      document.write(str1 + "<br>");
+      document.write(str2 + "<br>");
+      document.write(str3 + "<br>");
+
+      let num1 = 10; // Integer
+      let num2 = 10.22; // Floating point number
+      document.write("The value of num1 is " + num1 + "<br/>");
+      document.write("The value of num2 is " + num2 + "<br/>");
+
+      let bool1 = true;
+      let bool2 = false;
+      document.write("The value of the bool1 is " + bool1 + "<br/>");
+      document.write("The value of the bool2 is " + bool2 + "<br/>");
+
+      let houseNo; // Contains undefined value
+      let apartment = "Ajay";
+      apartment = undefined; // Assigning the undefined value
+      document.write("The value of the house No is: " + houseNo + "<br/>");
+      document.write("The value of the apartment is: " + apartment + "<br/>");
+
+      let color = "Brown";
+      const obj = {
+        animal: "Horse",
+        legs: 4,
+        houseColor: color,
+      };
+      document.write("The given object is: " + JSON.stringify(obj) + "<br/>");
+
+      const colors = ["Brown", "red", "pink", "Yellow", "Blue"];
+      document.write("The given array is: " + colors + "<br/>");
+
+      let date = new Date();
+      document.write("The today's date and time is: " + date + "<br/>");
+
+      let first = "One"; // it is string
+      first = 1; // now it's Number
+      document.write("The value of the first variable is " + first + "<br/>");
+      first = true; // now it's Boolean
+      document.write("The value of the first variable is " + first + "<br/>");
+
+      let num = 30;
+      let str = "Hello";
+      let bool = true;
+      document.write("The data type of num is: " + typeof num + "<br/>");
+      document.write("The data type of str is: " + typeof str + "<br/>");
+      document.write("The data type of bool is: " + typeof bool + "<br/>");
+    </script>
+  </body>
+</html>

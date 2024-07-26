@@ -1,0 +1,62 @@
+<html>
+  <head>
+    <script type="text/javascript">
+      function sayHello() {
+        alert("Hello World Minh Tuan Frontend");
+      }
+      document.write("Hello World!");
+      document.write("<br />"); // To add line-break
+
+      document.write(10); // Number Literal
+      document.write("<br />"); // To add line-break
+
+      document.write("Hello"); // String Literal
+      document.write("<br />"); // To add line-break
+
+      let a = 5; // Variable Declaration
+      document.write(a); // Using variable
+      document.write("<br>");
+      let b = "One";
+      document.write(b);
+      document.write("<br>");
+
+      let c = "time";
+      let d = "Time";
+      document.write("c == d? " + (c == d));
+      document.write("<br>");
+
+      function getSum(first, second) {
+        var sum = first * second;
+        document.write(
+          "The product of " + first + " and " + second + " is " + sum
+        );
+      }
+      let first = 3;
+      const second = 4;
+      getSum(first, second);
+      document.write("<br>");
+
+      // comment in javascript
+      var1 = 10;
+      var2 = 20;
+      var3 = var1 * var2;
+      var4 = 10 + 20;
+      document.write(var3 + " " + var4 + "<br>");
+
+      let a2 = 10;
+      let b2 = 2;
+
+      let c2 = a2; // Assigning a value of a to c. Assignment expression.
+      let d2 = a2 + b2; // Adding a and b. Arithmetic expression.
+      let e2 = a2 - b2; // Subtracting b from a.
+
+      document.write("c = " + c2 + "<br>");
+      document.write("d = " + d2 + "<br>");
+      document.write("e = " + e2 + "<br>");
+    </script>
+  </head>
+
+  <body>
+    <input type="button" onclick="sayHello()" value="Say Hello" />
+  </body>
+</html>

@@ -1,0 +1,40 @@
+<html>
+  <body>
+    <div id="output"></div>
+    <div id="output_1"></div>
+    <div id="demo"></div>
+
+    <script type="text/javascript">
+      //
+      let result;
+      let age = 20;
+      if (age > 18) {
+        result = "Qualifies for driving 123";
+      }
+      document.getElementById("output").innerHTML = result;
+
+      //
+      let age_1 = 15;
+      if (age_1 > 18) {
+        result = "Qualifies for driving";
+      } else {
+        result = "Does not qualify for driving";
+      }
+      document.getElementById("output_1").innerHTML = result;
+
+      //
+      const output = document.getElementById("demo");
+      let book = "maths";
+      if (book == "history") {
+        output.innerHTML = "<b>History Book</b>";
+      } else if (book == "maths") {
+        output.innerHTML = "<b>Maths Book</b>";
+      } else if (book == "economics") {
+        output.innerHTML = "<b>Economics Book</b>";
+      } else {
+        output.innerHTML = "<b>Unknown Book</b>";
+      }
+    </script>
+    <p>Set the variable to a different value and then try...</p>
+  </body>
+</html>

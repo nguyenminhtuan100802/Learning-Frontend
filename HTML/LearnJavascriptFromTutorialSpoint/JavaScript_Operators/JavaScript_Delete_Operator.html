@@ -1,0 +1,16 @@
+<html>
+  <body>
+    <div id="output"></div>
+    <script>
+      const obj = {
+        product: "Mobile",
+        price: 20000,
+        color: "Blue",
+      };
+      delete obj.price; // deleting price
+      document.getElementById("output").innerHTML =
+        "The Mobile price is " + obj.price + " and color is " + obj.color;
+
+    </script>
+  </body>
+</html>
