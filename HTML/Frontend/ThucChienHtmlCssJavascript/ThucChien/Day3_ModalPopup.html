@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="Day3_ModalPopup.css" />
+  </head>
+  <body>
+    <div class="pop_up" id="box_pop_up">
+      <div class="pop_up_header">
+        <p>
+          Welcome to my website
+          <button class="pop_up_header_button" onclick="hiddenPopUp()">
+            X
+          </button>
+        </p>
+      </div>
+      <div class="pop_up_body">
+        <p>Modal</p>
+        <p>Body of pop up is here</p>
+      </div>
+      <div class="pop_up_footer">
+        <button onclick="hiddenPopUp()">Close</button>
+      </div>
+    </div>
+    <div class="button_action">
+      <button class="button_open_modal" onclick="visiblePopUp()">
+        Open Modal
+      </button>
+    </div>
+    <script src="Day3_ModalPopup.js"></script>
+  </body>
+</html>

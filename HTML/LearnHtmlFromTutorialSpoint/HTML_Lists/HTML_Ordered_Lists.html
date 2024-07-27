@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Styled Ordered List</title>
+    <style>
+      /* Basic Styling */
+      ol {
+        color: navy;
+        font-family: "Arial", sans-serif;
+        margin-left: 20px;
+      }
+      li {
+        font-size: 16px;
+        margin-bottom: 8px;
+      }
+      /* Changing Numbering Style */
+      ol.roman {
+        list-style-type: upper-roman;
+      }
+      ol.letters {
+        list-style-type: upper-alpha;
+      }
+      /* Adding Counters */
+      ol.counter-list {
+        counter-reset: my-counter;
+      }
+      ol.counter-list li {
+        counter-increment: my-counter;
+      }
+      ol.counter-list li::before {
+        content: counter(my-counter) ". ";
+      }
+      /* Changing Text Color on Hover */
+      li.hover-effect:hover {
+        color: #e44d26;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Styled Ordered List Example</h1>
+    <h2>Basic Styling</h2>
+    <ol>
+      <li>Item 1</li>
+      <li>Item 2</li>
+      <li>Item 3</li>
+    </ol>
+    <h2>Changing Numbering Style</h2>
+    <ol class="roman">
+      <li>Roman I</li>
+      <li>Roman II</li>
+      <li>Roman III</li>
+    </ol>
+    <ol class="letters">
+      <li>Letter A</li>
+      <li>Letter B</li>
+      <li>Letter C</li>
+    </ol>
+    <h2>Adding Counters</h2>
+    <ol class="counter-list">
+      <li>Item</li>
+      <li>Item</li>
+      <li>Item</li>
+    </ol>
+    <h2>Changing Text Color on Hover</h2>
+    <ol>
+      <li class="hover-effect">Hover Effect 1</li>
+      <li class="hover-effect">Hover Effect 2</li>
+      <li class="hover-effect">Hover Effect 3</li>
+    </ol>
+  </body>
+</html>

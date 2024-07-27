@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Input Type Attribute Examples</title>
+    <script>
+      function showAlert() {
+        var name = document.getElementById("name").value;
+        var email = document.getElementById("email").value;
+        alert("Name: " + name + "\nEmail: " + email);
+      }
+    </script>
+  </head>
+
+  <body>
+    <h1>HTML Input Type Attribute Examples</h1>
+
+    <form>
+      <!-- Text Input -->
+      <label for="text">Text:</label>
+      <input type="text" id="text" name="text" value="Default Text" />
+      <br /><br />
+
+      <!-- Password Input -->
+      <label for="password">Password:</label>
+      <input
+        type="password"
+        id="password"
+        name="password"
+        value="password123"
+      />
+      <br /><br />
+
+      <!-- Range Input -->
+      <label for="range">Range:</label>
+      <input
+        type="range"
+        id="range"
+        name="range"
+        min="0"
+        max="100"
+        value="50"
+      />
+      <br /><br />
+
+      <!-- Datetime-local Input -->
+      <label for="datetime">Datetime-local:</label>
+      <input
+        type="datetime-local"
+        id="datetime"
+        name="datetime"
+        value="2023-06-01T12:00"
+      />
+      <br /><br />
+
+      <!-- Submit Button -->
+      <input type="submit" value="Submit" />
+    </form>
+
+    <!--  -->
+    <hr />
+    <h1>Contact Us</h1>
+    <form onsubmit="return false;">
+      <label for="name">Name:</label>
+      <input type="text" id="name" name="user_name" />
+      <br /><br />
+
+      <label for="email">Email:</label>
+      <input type="email" id="email" name="user_email" />
+      <br /><br />
+
+      <button type="button" onclick="showAlert()">Submit</button>
+    </form>
+
+    <!--  -->
+    <hr />
+    <h1>HTML Size and Maxlength Attribute</h1>
+
+    <h2>Size Attribute</h2>
+    <p>
+      The <code>size</code> attribute specifies the visible width of the input
+      field in characters.
+    </p>
+
+    Size 10:
+    <input type="text" name="size-example" size="10" value="1234567890" />
+
+    <h2>Maxlength Attribute</h2>
+    <p>
+      The <code>maxlength</code> attribute specifies the maximum number of
+      characters that can be entered in the input field.
+    </p>
+    Maxlength 10:
+    <input type="text" maxlength="10" value="1234567890" />
+
+    <h2>Combined Size and Maxlength</h2>
+    <p>
+      Here is an example combining both <code>size</code> and
+      <code>maxlength</code> attributes.
+    </p>
+    Size 10, Maxlength 5:
+    <input type="text" size="10" maxlength="5" value="12345" />
+
+    <!--  -->
+    <hr />
+    <h1>HTML Readonly and Disabled Attributes</h1>
+
+    <h2>Readonly Attribute</h2>
+    <p>
+      The <code>readonly</code> attribute allows the user to view the content
+      but not modify it.
+    </p>
+    Readonly:
+    <input type="text" value="Readonly Text" readonly />
+
+    <h2>Disabled Attribute</h2>
+    <p>
+      The <code>disabled</code> attribute makes the input field unmodifiable and
+      prevents user interaction.
+    </p>
+
+    Disabled:
+    <input type="text" value="Disabled Text" disabled />
+
+    <!--  -->
+    <hr />
+    <form>
+      Emp. Name:
+      <input type="text" name="your_name" placeholder="your name..." />
+      <br /><br />
+      Organization:
+      <input type="text" name="organization" value="Tutorialspoint" readonly />
+      <br /><br />
+      Working Hrs:
+      <input type="number" name="working_hours" min="3" max="8" />
+    </form>
+
+    <!--  -->
+    <hr />
+    <h1>HTML Multiple and Accept Attributes</h1>
+
+    <h2>Multiple Attribute</h2>
+    <p>
+      The <code>multiple</code> attribute allows the user to select multiple
+      files.
+    </p>
+    Select multiple files:
+    <input type="file" id="multiple-example" name="files" multiple />
+
+    <h2>Accept Attribute</h2>
+    <p>
+      The <code>accept</code> attribute specifies the types of files that the
+      server accepts (that can be submitted through file upload).
+    </p>
+    Select image files only:
+    <input type="file" id="accept-example" name="images" accept="image/*" />
+
+    <!--  -->
+    <hr />
+    <h3>Placeholder and Required Attributes</h3>
+
+    <form onsubmit="return false;">
+      <p>The * Star represents mandatory field</p>
+      <!-- Placeholder for name entry -->
+      Emp. Name:
+      <input
+        type="text"
+        id="emp-name"
+        name="emp-name"
+        placeholder="Your Name"
+      />
+      <br /><br />
+      <!-- Email and DOB are mandatory -->
+      Emp. Email:
+      <input
+        type="email"
+        id="emp-email"
+        name="emp-email"
+        placeholder="example@email.com"
+        required
+      />* <br /><br />
+      Date of Birth:
+      <input type="date" required />* <br /><br />
+      <input type="submit" value="Submit" />
+    </form>
+
+    <!--  -->
+    <hr />
+    <form onsubmit="return false;">
+      Emp. Name:
+      <input type="text" name="your_name" autofocus />
+      <br /><br />
+      Emp. Email:
+      <input type="email" name="mail" placeholder="example@email.com" />
+      <br /><br />
+      <input type="submit" />
+
+      <!--  -->
+      <hr />
+      <p>Click on input field and select from dropdown:</p>
+      <input type="text" list="fruits" />
+      <datalist id="fruits">
+        <option value="Apple"></option>
+        <option value="Banana"></option>
+        <option value="Orange"></option>
+        <option value="Grapes"></option>
+        <option value="Pears"></option>
+      </datalist>
+    </form>
+  </body>
+</html>

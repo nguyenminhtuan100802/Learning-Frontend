@@ -1,0 +1,54 @@
+body {
+  background-color: powderblue;
+}
+.button_open_modal {
+  width: fit-content;
+  height: fit-content;
+  background-color: white;
+  color: black;
+  cursor: pointer;
+}
+
+.button_action {
+  width: fit-content;
+  margin: 20px auto 0px auto;
+}
+
+.pop_up {
+  width: fit-content;
+  border: 2px solid black;
+  margin: 50px auto 0px auto;
+  border-radius: 10px;
+  overflow: hidden;
+  opacity: 0;
+  transition: 0.2s;
+  background-color: yellow;
+}
+
+.pop_up_body p {
+  padding: 5px;
+  margin: unset;
+}
+.pop_up_header p {
+  background-color: red;
+  margin: unset;
+  padding: 5px;
+}
+.pop_up_header_button {
+  border: unset;
+  background-color: red;
+  padding: unset;
+  margin-left: 10px;
+  cursor: pointer;
+}
+
+.pop_up_footer {
+  width: fit-content;
+  margin: 5px auto;
+  margin-top: unset;
+}
+.pop_up_footer button {
+  background-color: red;
+  color: white;
+  cursor: pointer;
+}

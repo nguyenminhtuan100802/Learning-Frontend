@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <title>Sample HTML Form</title>
+    <style>
+      body {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+        background-color: #f0f0f0;
+      }
+
+      form {
+        width: 600px;
+        background-color: #fff;
+        padding: 20px;
+        border-radius: 8px;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+      }
+
+      fieldset {
+        border: 1px solid black;
+        padding: 10px;
+        margin: 0;
+      }
+
+      legend {
+        font-weight: bold;
+        margin-bottom: 10px;
+      }
+
+      label {
+        display: block;
+        margin-bottom: 5px;
+      }
+
+      input[type="text"],
+      input[type="email"],
+      input[type="password"],
+      textarea {
+        width: calc(100% - 20px);
+        padding: 8px;
+        margin-bottom: 10px;
+        box-sizing: border-box;
+        border: 1px solid #ccc;
+        border-radius: 4px;
+      }
+      input[type="submit"] {
+        padding: 10px 20px;
+        margin-left: 300px;
+        border-radius: 5px;
+        cursor: pointer;
+        background-color: #04af2f;
+      }
+    </style>
+  </head>
+  <body>
+    <!-- Start of the form element -->
+    <form action=" ">
+      <!-- various form controls -->
+      <label for="first_name">First name:</label>
+      <input type="text" name="first_name" />
+      <br /><br />
+      <label for="first_name">Last name:</label>
+      <input type="text" name="last_name" />
+      <br /><br />
+      <input type="submit" />
+    </form>
+
+    <!--  -->
+    <!-- Start of the form element -->
+    <hr />
+    <form action="" method="post">
+      <!-- various form controls -->
+      <label for="first_name">First name:</label>
+      <input type="text" name="first_name" required />
+      <br /><br />
+      <label for="last_name">Last name:</label>
+      <input type="text" name="last_name" required />
+      <br /><br />
+      <input type="submit" />
+    </form>
+
+    <!--  -->
+    <hr />
+    <form>
+      <fieldset>
+        <legend>Registration Form</legend>
+        <label>First Name</label>
+        <input type="text" name="FirstName" />
+
+        <label>Last Name</label>
+        <input type="text" name="LastName" />
+
+        <label>Email id</label>
+        <input type="email" name="email" />
+
+        <label>Enter your password</label>
+        <input type="password" name="password" />
+
+        <label>Confirm your password</label>
+        <input type="password" name="confirmPass" />
+
+        <label>Address</label>
+        <textarea name="address"></textarea>
+
+        <input type="submit" value="Submit" />
+      </fieldset>
+    </form>
+  </body>
+</html>
