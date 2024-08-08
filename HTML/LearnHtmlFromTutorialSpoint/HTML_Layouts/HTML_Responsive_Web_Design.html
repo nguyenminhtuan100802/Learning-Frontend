@@ -1,0 +1,49 @@
+<html>
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <style>
+      .container {
+        background-color: #f1f1f1;
+        display: flex;
+        flex-direction: row;
+      }
+      .col {
+        width: 47%;
+        margin: auto 1%;
+        background-color: #4caf50;
+        color: white;
+        text-align: center;
+        line-height: 100px;
+        font-size: 10px;
+      }
+    </style>
+  </head>
+  <body>
+    <h2>Setting up dimensions in percentage for the HTML element</h2>
+    <div class="container">
+      <div class="col">Column 1</div>
+      <div class="col">Column 2</div>
+    </div>
+
+    <h1 style="font-size: 6vw">Example of Responsive Typography</h1>
+    <h2 style="font-size: 5vw">Responsive text by Using the vw length unit.</h2>
+    <p style="font-size: 3vw">
+      The text will adapt the font size according to the device's width.
+    </p>
+
+    <h2>Setting the width property to 100%</h2>
+    <img
+      src="../../Frontend/Image/Capybara.jpg"
+      alt="logo"
+      style="width: 100%"
+    />
+    <h2>
+      Creating the responsive image by setting the max-width property to 100%
+    </h2>
+    <img
+      src="../../Frontend/Image/Capybara.jpg"
+      alt="logo"
+      style="max-width: 100%; height: auto"
+    />
+  </body>
+</html>

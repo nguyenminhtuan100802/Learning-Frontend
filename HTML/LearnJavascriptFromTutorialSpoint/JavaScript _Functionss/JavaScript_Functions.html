@@ -1,0 +1,31 @@
+<html>
+  <head>
+    <script type="text/javascript">
+      function sayHello() {
+        alert("Hello there!");
+      }
+      function sayHello1(name, age) {
+        document.write(name + " is " + age + " years old.");
+      }
+      function concatenate(first, last) {
+        var full;
+        full = first + last;
+        return full;
+      }
+      function secondFunction() {
+        var result;
+        result = concatenate("Zara ", "Ali");
+        alert(result);
+      }
+    </script>
+  </head>
+  <body>
+    <p>Click the following button to call the function</p>
+    <form>
+      <input type="button" onclick="sayHello()" value="Say Hello" />
+      <input type="button" onclick="sayHello1('Zara', 7)" value="Say Hello" />
+      <input type="button" onclick="secondFunction()" value="Call Function" />
+    </form>
+    <p>Use different text in the write method and then try...</p>
+  </body>
+</html>

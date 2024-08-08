@@ -39,3 +39,17 @@ console.log(student);
 // xóa thuộc tính
 delete student.email;
 console.log(student);
+
+// 34.5
+let person = {
+  name: "john",
+  age: 30,
+};
+let keys = Object.keys(person);
+let values = Object.values(person);
+let entries = Object.entries(person);
+console.log(keys);
+console.log(values);
+console.log(entries);
+
+// 34.7

@@ -1,0 +1,32 @@
+body {
+  background-color: greenyellow;
+}
+.container_search_box {
+  width: fit-content;
+  margin: 200px auto 0px auto;
+}
+.container_search_box input {
+  font-size: 50px;
+  width: 300px;
+  border: unset;
+  padding: unset;
+  background-color: black;
+  color: white;
+  transform: translateX(3px);
+  border-top-left-radius: 10px;
+  border-bottom-left-radius: 10px;
+  transition: 1s;
+}
+.container_search_box button {
+  width: fit-content;
+  height: fit-content;
+  border: unset;
+  padding: 6px;
+  border-top-right-radius: 10px;
+  border-bottom-right-radius: 10px;
+}
+.container_search_box img {
+  width: 25px;
+  height: 20px;
+  padding: 10px;
+}

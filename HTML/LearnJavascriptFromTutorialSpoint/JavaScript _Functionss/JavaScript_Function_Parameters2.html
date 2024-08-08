@@ -1,0 +1,26 @@
+<html>
+  <head>
+    <title>JavaScript - Arguments are passed by value</title>
+  </head>
+  <body>
+    <p id="output"></p>
+    <script>
+      const output = document.getElementById("output");
+      function update(val1, val2) {
+        val1 = 20;
+        val2 = 30;
+      }
+
+      var val1 = "Hello";
+      var val2 = "World";
+
+      output.innerHTML += "Before calling the function! <br>";
+      output.innerHTML += "val1 = " + val1 + ", val2 = " + val2 + "<br>";
+
+      update(val1, val2);
+
+      output.innerHTML += "After calling the function! <br>";
+      output.innerHTML += "val1 = " + val1 + ", val2 = " + val2 + "<br>";
+    </script>
+  </body>
+</html>

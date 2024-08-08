@@ -4,27 +4,68 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
+    <link rel="stylesheet" href="../../htmlUsingCss/reset.css" />
     <link rel="stylesheet" href="Day4_ImageGallery.css" />
   </head>
   <body>
-    <div class="container_image">
-      <img
-        src="../../Image/Capybara.jpg"
-        alt=""
-        onclick="zoomPicture()"
-        id="picture_capybara"
-      />
+    <div class="container">
+      <div class="container_image">
+        <img
+          src="../../Image/Capybara.jpg"
+          alt=""
+          onclick="zoomPicture()"
+          id="picture_capybara"
+        />
+      </div>
+
+      <div class="container_image">
+        <img
+          src="../../Image/Dog.webp"
+          alt=""
+          onclick="zoomPicture()"
+          id="picture_dog"
+        />
+      </div>
+
+      <div class="container_image">
+        <img
+          src="../../Image/MinhTuan.jpg"
+          alt=""
+          onclick="zoomPicture()"
+          id="picture_me"
+        />
+      </div>
+
+      <div class="container_image">
+        <img
+          src="../../Image/NikeShoe.png"
+          alt=""
+          onclick="zoomPicture()"
+          id="picture_shoe"
+        />
+      </div>
     </div>
 
+    <!-- <p class="test">frnotend</p> -->
     <!--  -->
     <div class="container_zoom_picture">
-      <button class="button-left">
-        <img src="../../Image/ArrowLeft.png" alt="" />
-      </button>
-      <img src="" alt="" />
-      <button class="button-left">
-        <img src="../../Image/ArrowRight.png" alt="" />
-      </button>
+      <button class="button_close" onclick="removePicture()">x</button>
+
+      <div class="container_button_left">
+        <button class="button_left">
+          <img src="../../Image/ArrowLeft.png" alt="" />
+        </button>
+      </div>
+
+      <div class="container_picture">
+        <img class="picture_zoom" src="../../Image/Dog.webp" alt="" />
+      </div>
+
+      <div class="container_button_right">
+        <button class="button_right">
+          <img src="../../Image/ArrowRight.png" alt="" />
+        </button>
+      </div>
     </div>
     <script src="Day4_ImageGallery.js"></script>
   </body>

@@ -1,0 +1,20 @@
+body {
+  background-color: greenyellow;
+}
+.seach_tag {
+  width: fit-content;
+  background-color: white;
+  padding: 10px;
+  border-radius: 10px;
+}
+.header_search_tag {
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: bold;
+}
+.body_search_tag {
+  border: 1px solid black;
+  padding: 0px;
+}
+.body_search_tag input {
+
+}

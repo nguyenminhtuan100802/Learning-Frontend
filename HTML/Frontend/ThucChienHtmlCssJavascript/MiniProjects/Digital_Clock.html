@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Digital Clock</title>
+    <style>
+      .clock {
+        color: red;
+        border: 2px solid black;
+        border-radius: 10px;
+        width: fit-content;
+        padding: 10px;
+        margin: 10px auto;
+        font-size: 40px;
+        font-family: Arial, Helvetica, sans-serif;
+        font-weight: bold;
+      }
+    </style>
+  </head>
+  <body onload="startClock()">
+    <h1>Digital clock</h1>
+    <h3>Designed by MinhTuan</h3>
+    <div class="clock"></div>
+
+    <script>
+      function startClock() {
+        var timeToday = new Date();
+        var hourToday = timeToday.getHours();
+        var minuteToday = timeToday.getMinutes();
+        var secondToday = timeToday.getSeconds();
+
+        hourToday = checkTime(hourToday);
+        minuteToday = checkTime(minuteToday);
+        secondToday = checkTime(secondToday);
+
+        if (hourToday <= 12) {
+          document.getElementsByClassName("clock")[0].innerHTML =
+            hourToday + ":" + minuteToday + ":" + secondToday + " AM";
+        } else {
+          document.getElementsByClassName("clock")[0].innerHTML =
+            hourToday + ":" + minuteToday + ":" + secondToday + " PM";
+        }
+
+        // gọi lại hàm sau 1s (~đệ quy)
+        setInterval(startClock, 1000);
+      }
+
+      function checkTime(timeCheck) {
+        if (timeCheck < 10) {
+          return "0" + timeCheck;
+        }
+        return timeCheck;
+      }
+    </script>
+  </body>
+</html>

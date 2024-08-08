@@ -1,0 +1,35 @@
+<html>
+  <body>
+    <p id="output"></p>
+    <script>
+      const num = new Number(20);
+      document.getElementById("output").innerHTML =
+        "num = " + num + "<br>" + "typeof num : " + typeof num + "<br>";
+
+      //
+
+      document.getElementById("output").innerHTML +=
+        "<hr>" +
+        "Max Value : " +
+        Number.MAX_VALUE +
+        "<br>" +
+        "Min Value : " +
+        Number.MIN_VALUE +
+        "<br>" +
+        "Positive Infinity : " +
+        Number.POSITIVE_INFINITY +
+        "<br>" +
+        "Negative Infinity : " +
+        Number.NEGATIVE_INFINITY +
+        "<br>" +
+        "NaN : " +
+        Number.NaN +
+        "<br>";
+
+      //
+      let num1 = Number(10);
+      document.getElementById("output").innerHTML +=
+        "<hr>" + "num = " + num1 + "<br>" + "typeof num = " + typeof num1;
+    </script>
+  </body>
+</html>

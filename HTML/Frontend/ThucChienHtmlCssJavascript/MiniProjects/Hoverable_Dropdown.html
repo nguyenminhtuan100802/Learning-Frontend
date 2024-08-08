@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      .root {
+        width: fit-content;
+        background-color: powderblue;
+        margin-bottom: unset;
+        padding: 5px;
+      }
+      .element {
+        display: none;
+        margin: unset;
+        padding: 5px;
+        background-color: rgb(243, 227, 227);
+      }
+      .container {
+        width: fit-content;
+        float: left;
+        text-align: center;
+        margin-right: 10%;
+      }
+      .container:hover .element {
+        display: block;
+      }
+      .element:hover {
+        background-color: orange;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <p class="root">Manga</p>
+      <p class="element">doremon</p>
+      <p class="element">conan</p>
+      <p class="element">one punch</p>
+      <p class="element">abc</p>
+    </div>
+    <div class="container">
+      <p class="root">Manga</p>
+      <p class="element">doremon</p>
+      <p class="element">conan</p>
+      <p class="element">one punch</p>
+      <p class="element">abc</p>
+    </div>
+  </body>
+</html>

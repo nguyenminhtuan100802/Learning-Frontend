@@ -1,0 +1,13 @@
+<html>
+  <body>
+    <p id="output"></p>
+    <script>
+      printMessage("Top");
+      function printMessage(pos) {
+        document.getElementById("output").innerHTML +=
+          "The function is called from the " + pos + "<br/>";
+      }
+      printMessage("Bottom");
+    </script>
+  </body>
+</html>
