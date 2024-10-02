@@ -1,0 +1,16 @@
+.container_pic {
+  width: 1000px;
+  height: 600px;
+}
+.pic_1 {
+  width: 10%;
+  height: 100%;
+  overflow: hidden;
+  transition: 1.5s;
+  float: left;
+  margin-right: 1%;
+  border-radius: 40px;
+}
+.pic_1 img {
+  height: 100%;
+}

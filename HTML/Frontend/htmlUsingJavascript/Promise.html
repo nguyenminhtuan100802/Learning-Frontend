@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      let promise = new Promise(
+        // executor
+        function (resolve, reject) {
+          // logic
+          // thành công: resolve
+          // thất bại: reject
+          // resolve();
+          reject("Có lỗi");
+        }
+      );
+
+      promise
+        .then(function () {
+          console.log("Success");
+        })
+        .catch(function (error) {
+          console.log(error);
+        })
+        .finally(function () {
+          console.log("Done");
+        });
+    </script>
+  </body>
+</html>
